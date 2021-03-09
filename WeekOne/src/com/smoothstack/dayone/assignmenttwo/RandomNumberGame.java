@@ -37,10 +37,11 @@ public class RandomNumberGame {
 				
 			//Check guess is in bounds
 			if (guess < 1 || guess > 100) {
-				System.out.println("Number is not between 1 and 100. Please reenter guess. Lives"							+ " Remaining: " + lives);
+				System.out.println("Number is not between 1 and 100. Please reenter guess. Lives"
+						+ " Remaining: " + lives);
 					
 			//Winning guess
-			} else if (guess >= randomNumber - 10 && guess <= randomNumber + 10) {
+			} else if (Math.abs(randomNumber - guess) <= 10) {
 						
 				System.out.println("You win! The mystery number is: " + randomNumber);
 				win  = true;
