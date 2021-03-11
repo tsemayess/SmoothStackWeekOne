@@ -24,9 +24,11 @@ public class Engine {
 		
 			File d = new File(args[0]);
 			
-			for (String f: d.list()) {
-				System.out.println(f);
-			}
+//			for (String f: d.list()) {
+//				System.out.println(f);
+//			}
+			
+			DirectoryReader.printAll(d);
 		}
 		
 		catch (Exception e) {

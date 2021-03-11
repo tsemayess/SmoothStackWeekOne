@@ -4,6 +4,7 @@
 package com.smoothstack.daythree.assignmentone;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -12,44 +13,20 @@ import java.util.ArrayList;
  *
  */
 public class DirectoryReader {
-
-	/**
-	 * @param args
-	 */
-	StringBuffer file;
 	
-	DirectoryReader(String filePath) {
-		file = new StringBuffer(filePath);
-		//add throws keyword for file not found or input mismatch
-	}
-	
-	private String[] list(String file) throws NullPointerException {
-		File f = new File(file);
-		String[] currentFiles;
-		List<String> files = new ArrayList<>();
+	public static void printAll(File root) {
 		
 		
-		if (f.isDirectory()) {
-			currentFiles = f.list();
-			files.add(f.getName());
+		for (String s: root.list()) {
+			File f = new File(root.getAbsolutePath() + "/" + s);
 			
-			for (String s: currentFiles) {
-				//get file using s pathname???
-				
+			System.out.println(s);
+			
+			if (f.isDirectory()) {
+				printAll(f);
+
 			}
 		}
-		return null;	
-	}
-	
-	
-	@Override
-	public boolean equals(Object obj) {
-		return true;
-	}
-	
-	@Override 
-	public int hashCode() {
-		return 0;
 	}
 
 }

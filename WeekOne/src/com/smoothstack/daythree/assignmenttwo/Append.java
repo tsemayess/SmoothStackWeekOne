@@ -15,7 +15,6 @@ public class Append {
 			writer.write("\n" + keyboard.nextLine());
 			
 		} catch (Exception e) {
-			e.printStackTrace();
 			System.out.println("Cannot find file");
 		} 
 
