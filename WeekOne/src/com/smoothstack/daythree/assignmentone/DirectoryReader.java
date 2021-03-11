@@ -4,9 +4,6 @@
 package com.smoothstack.daythree.assignmentone;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.List;
-import java.util.ArrayList;
 
 /**
  * @author Tsemaye
@@ -17,7 +14,7 @@ public class DirectoryReader {
 	File root;
 	Integer rootDepth;
 	
-	//if the file is not a directory is throws a exception
+	//if the file is not a directory it throws an exception
 	DirectoryReader(File f) throws Exception {
 		if (!f.isDirectory()) {
 			throw new Exception();
@@ -35,7 +32,6 @@ public class DirectoryReader {
 
 			if (f.isDirectory()) {
 				printAll(f);
-
 			}
 		}
 	}
@@ -57,14 +53,10 @@ public class DirectoryReader {
 			}
 			System.out.println(tabs + s);
 			
-
 			if (f.isDirectory()) {
 				this.printFormatted(f);
-
-			} 
-			
+			} 	
 		}
-		
 	}
 	
 	private int getDepth(File f) {
@@ -76,8 +68,6 @@ public class DirectoryReader {
 				depth++;
 			}
 		}
-		
 		return depth;
 	}
-
 }
