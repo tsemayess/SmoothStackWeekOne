@@ -23,12 +23,11 @@ public class Engine {
 			}
 		
 			File d = new File(args[0]);
+		
 			
-//			for (String f: d.list()) {
-//				System.out.println(f);
-//			}
-			
-			DirectoryReader.printAll(d);
+			//list everything easy to understand hierarchy
+			DirectoryReader reader = new DirectoryReader(d);
+			reader.printFormatted();
 		}
 		
 		catch (Exception e) {
