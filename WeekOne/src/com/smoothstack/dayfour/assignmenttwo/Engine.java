@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.smoothstack.dayfive.assignmenttwo;
+package com.smoothstack.dayfour.assignmenttwo;
 
 /**
  * @author Tsemaye

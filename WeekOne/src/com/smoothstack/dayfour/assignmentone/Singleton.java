@@ -1,4 +1,4 @@
-package com.smothstack.dayfive.assignmentone;
+package com.smoothstack.dayfour.assignmentone;
 
 public class Singleton {
 

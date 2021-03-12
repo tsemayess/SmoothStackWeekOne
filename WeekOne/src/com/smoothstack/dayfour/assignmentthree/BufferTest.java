@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.smoothstack.dayfive.assignmentthree;
+package com.smoothstack.dayfour.assignmentthree;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;

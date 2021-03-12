@@ -1,4 +1,4 @@
-package com.smoothstack.dayfive.assignmentthree;
+package com.smoothstack.dayfour.assignmentthree;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

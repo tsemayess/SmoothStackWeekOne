@@ -1,4 +1,4 @@
-package com.smoothstack.dayfive.assignmentthree;
+package com.smoothstack.dayfour.assignmentthree;
 
 public class Consumer extends Thread {
 

@@ -1,4 +1,4 @@
-package com.smoothstack.dayfive.assignmentthree;
+package com.smoothstack.dayfour.assignmentthree;
 
 import static org.junit.Assert.assertEquals;
 
