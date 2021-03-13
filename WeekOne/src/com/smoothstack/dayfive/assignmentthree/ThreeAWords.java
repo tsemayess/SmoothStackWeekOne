@@ -15,14 +15,9 @@ import java.util.function.IntFunction;
 public class ThreeAWords {
 
 	public List<String> filter(List<String> l) throws NullPointerException {
-		
-		List<String>  l1 = new LinkedList<>();
-		
-		for (Object o: l.stream().filter(p -> p.charAt(0) == 'a' && p.length() == 3).toArray()) {
-			l1.add(o.toString());
-		}
 
-		return l1;
+		
+		return Arrays.asList(l.stream().filter(p -> p.charAt(0) == 'a' && p.length() == 3).toArray(String[]::new));	
 
 	}
 
