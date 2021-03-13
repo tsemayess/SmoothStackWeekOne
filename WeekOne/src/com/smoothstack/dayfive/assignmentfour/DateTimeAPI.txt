@@ -1,0 +1,13 @@
+1) java.time.LocalDateTime API
+
+2) import java.time.DayOfWeek
+	LocalDate today = LocalDate.now();
+	LocalDate lastThursday = today.with(TemporalAdjusters.
+				previous(DayOfWeek.THURSDAY));		
+	with() method adjusts date according to parameter set my temporal adjuster.
+	
+3) ZoneId stores time zone if program needs it. ZoneOffset saves date and time
+   along with the offset amount of time specified
+
+4) Call atZone(ZoneId id) method on instant to change to ZonedDateTime. Opposite ZonedDateTimeobj.toInstant;
+
