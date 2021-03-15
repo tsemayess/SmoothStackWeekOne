@@ -6,14 +6,6 @@ import org.junit.Test;
 
 public class RecursionTest {
 
-	@Test
-	public void sortHP() {
-		Integer[] a = { 2, 4, 4, 6, 7, 7, 7, 8 };
-		Integer[] r = {2, 8, 6, 21, 8};
-
-		assertEquals(r, RecursionsStream.sort(r));
-
-	}
 
 	
 	@Test

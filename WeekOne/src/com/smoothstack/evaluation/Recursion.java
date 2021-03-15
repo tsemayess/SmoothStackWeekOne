@@ -20,7 +20,7 @@ public class Recursion {
 	 * @param nums 
 	 * @return
 	 */
-	public static Integer[] sort(Integer[] nums) {
+	private static Integer[] sort(Integer[] nums) {
 		
 		List<Integer> b = new LinkedList<>();
 		int sum = 0;
@@ -53,7 +53,7 @@ public class Recursion {
 	 * @param target
 	 * @return
 	 */
-	public static boolean groupSum(int index, Integer[] nums, int target, int startsum) {
+	private static boolean groupSum(int index, Integer[] nums, int target, int startsum) {
 
 		if (startsum == target) {
 			return true;
