@@ -20,7 +20,7 @@ public class Recursion {
 	 * @param nums 
 	 * @return
 	 */
-	private static Integer[] sort(Integer[] nums) {
+	private static Integer[] sort(int[] nums) {
 		
 		List<Integer> b = new LinkedList<>();
 		int sum = 0;
@@ -84,7 +84,9 @@ public class Recursion {
 	
 
 	
-	public static boolean groupSumClump(int index, Integer[] nums, int target) throws NullPointerException {
+	public static boolean groupSumClump(int index, int[] nums, int target) throws NullPointerException {
+		
+		
 		if (nums.length == 0) {
 			throw new NullPointerException();
 		}

@@ -10,9 +10,9 @@ public class RecursionTest {
 	
 	@Test
 	public void groupSumClump() {
-		Integer[] a = { 2, 4, 6, 8 };
-		Integer[] b = { 2, 8, 4, 4 };
-		Integer[] c = { 1, 7, 7, 5 };
+		int[] a = { 2, 4, 6, 8 };
+		int[] b = { 2, 8, 4, 4 };
+		int[] c = { 1, 7, 7, 5 };
 
 		assert(Recursion.groupSumClump(0, a, 10));
 		assert(!Recursion.groupSumClump(0, b, 19));
@@ -27,7 +27,7 @@ public class RecursionTest {
 	
 	@Test(expected = NullPointerException.class)
 	public void emptyList() {
-		Integer[] a = {};
+		int[] a = {};
 		Recursion.groupSumClump(0, a, 0);
 	}
 }
