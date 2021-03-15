@@ -1,12 +1,13 @@
 package com.smoothstack.evaluation;
 
 import java.util.function.Function;
+import java.util.function.IntFunction;
 
 
 
 public class PerformsOperations {
 			
-	public static Function<Integer, String> isOdd() {
+	public static IntFunction<String> isOdd() {
 		return (i) -> {
 			if (i % 2 == 1 ) {
 				return "ODD";
@@ -16,7 +17,7 @@ public class PerformsOperations {
 		};
 	}
 	
-	public static Function<Integer, String> isPrime() {
+	public static IntFunction<String> isPrime() {
 		return (i) -> {
 			for (int j = 2; j < i / 2 + 1; j ++) {
 				if (i % j == 0) {
@@ -28,7 +29,7 @@ public class PerformsOperations {
 		};
 	}
 	
-	public static Function<Integer, String> isPalidrome() {
+	public static IntFunction<String> isPalidrome() {
 		return (i) -> {
 			int og = i;
 			int reverse = 0;
@@ -63,7 +64,7 @@ public class PerformsOperations {
 		
 	}
 	
-	private static String choose(Function<Integer, String> a, int n ) {
+	private static String choose(IntFunction<String> a, int n ) {
 		return a.apply(n);
 	}
 	
