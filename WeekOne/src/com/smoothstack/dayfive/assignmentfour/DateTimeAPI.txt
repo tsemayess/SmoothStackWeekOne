@@ -7,7 +7,7 @@
 	with() method adjusts date according to parameter set my temporal adjuster.
 	
 3) ZoneId stores time zone if program needs it. ZoneOffset saves date and time
-   along with the offset amount of time specified
+   along with the offset amount of time specified from GMT
 
 4) Call atZone(ZoneId id) method on instant to change to ZonedDateTime. Opposite ZonedDateTimeobj.toInstant;
 

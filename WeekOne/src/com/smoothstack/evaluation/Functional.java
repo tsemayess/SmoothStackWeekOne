@@ -18,5 +18,6 @@ public class Functional {
 		return Arrays.asList(l.stream().map(i -> i.replaceAll("x", "")).toArray(String[]::new));
 	}
 	
+	
 
 }
