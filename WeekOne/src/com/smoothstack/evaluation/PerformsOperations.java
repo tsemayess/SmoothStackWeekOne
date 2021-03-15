@@ -63,7 +63,7 @@ public class PerformsOperations {
 		
 	}
 	
-	public static String choose(Function<Integer, String> a, int n ) {
+	private static String choose(Function<Integer, String> a, int n ) {
 		return a.apply(n);
 	}
 	

@@ -44,44 +44,51 @@ public class Recursion {
 
 	}
 	
-	
 	/**
-	 * Helper method to check if numbers in the sorted array can add up to target number
+	 * Helper method to check if numbers in the sorted array can add up to target
+	 * number
+	 * 
 	 * @param index
 	 * @param nums
 	 * @param target
 	 * @return
 	 */
-	public static boolean groupSum(int index, Integer[] nums, int target) {
-		
+	public static boolean groupSum(int index, Integer[] nums, int target, int startsum) {
+
+		if (startsum == target) {
+			return true;
+		}
+
+		int sum = 0;
 		
 		for (int i = index; i < nums.length; i++) {
-			
-			
-			for (int j = i + 1; j < nums.length; j++) {	
-				
-				int sum = nums[i];
-				if (sum == target) {
+			sum = startsum + nums[i];
+
+
+			if (sum == target) {
+				return true;
+			} else if (sum < target) {
+
+
+				if (groupSum(i + 1, nums, target, sum)) {
 					return true;
 				}
-							
-				for (int k = j; k < nums.length; k++) {
-					sum += nums[k];
-					
-					if (sum == target) {
-						return true;
-					}
-				}
-				
+
 			}
+
 		}
-		
 
 		return false;
+
 	}
 	
-	public static boolean groupSumClump(int index, Integer[] nums, int target) {
-		return Recursion.groupSum(index, Recursion.sort(nums), target);
+
+	
+	public static boolean groupSumClump(int index, Integer[] nums, int target) throws NullPointerException {
+		if (nums.length == 0) {
+			throw new NullPointerException();
+		}
+		return Recursion.groupSum(index, Recursion.sort(nums), target, 0);
 	}
 
 }
