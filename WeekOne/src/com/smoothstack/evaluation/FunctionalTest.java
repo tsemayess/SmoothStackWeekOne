@@ -15,7 +15,7 @@ public class FunctionalTest {
 	
 	@Before
 	public void start() {
-		Integer[] i1 = {10, 304, 57, 2, 1958, 9};
+		Integer[] i1 = {10, 304, 57, 2, 1958, -9};
 		l1 = Arrays.asList(i1);
 		
 		Integer[] i2 = {};
@@ -47,7 +47,7 @@ public class FunctionalTest {
 	
 	@Test
 	public void doublingHP() {
-		Integer[] result = {20, 608, 114, 4, 3916, 18};
+		Integer[] result = {20, 608, 114, 4, 3916, -18};
 		Integer[] result2 = {};
 		
 		assertEquals(Arrays.asList(result), Functional.doubling(l1));

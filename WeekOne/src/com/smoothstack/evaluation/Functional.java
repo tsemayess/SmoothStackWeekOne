@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 public class Functional {
 	
 	public static List<Integer> rightDigit(List<Integer> l) throws NullPointerException {
-		return Arrays.asList(l.stream().map(i -> i % 10).toArray(Integer[]::new));
+		return Arrays.asList(l.stream().map(i -> Math.abs(i % 10)).toArray(Integer[]::new));
 	}
 	
 	public static List<Integer> doubling(List<Integer> l) throws NullPointerException  {

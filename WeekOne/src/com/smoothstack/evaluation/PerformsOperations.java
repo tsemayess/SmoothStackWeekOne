@@ -45,7 +45,7 @@ public class PerformsOperations {
 		};
 	}
 	
-	public static void tester(int[] t) {
+	public static void tester(int[] t) throws IndexOutOfBoundsException, NullPointerException {
 		for (int i = 0; i < t[0]; i++) {
 			switch (t[i*2 + 1]) {
 				case 1:
